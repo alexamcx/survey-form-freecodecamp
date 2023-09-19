@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Cat Survey</h1>
+    <img src="https://ih1.redbubble.net/image.3524904060.3809/st,small,507x507-pad,600x600,f8f8f8.jpg" alt="el gato">
+    <p id="description">A survey about cats</p>
+    
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">First Name: <input id="name" name="first-name" type="text" required placeholder="ur name" /></label>
+        <label id="email-label">Email: <input id="email" name="email" type="email" required placeholder="uremail@txt.com" /></label>
+        <label id="number-label">Favorite number between 0-100: <input id="number" name="number" type="number" min="0" max="100" placeholder=" 23" /></label>
+        <label id="dropdown-label">Cats or dogs?
+          <select id="dropdown" name="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">cats</option>
+            <option value="2">dogs</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label id="hate-label"><input type="radio" id="hate" name="lovehate" class="inline" value="hate" />I H8 CATS</label>
+        <label id="love-label"><input type="radio" id="love" name="lovehate" class="inline" value="love" />I ♡ CATS</label>
+      </fieldset>
+      <fieldset>
+        <p>Choose your favorite cats (check all that apply)</p>
+        <label><input type="checkbox" name="catoptions" value="black" class="inline" />Black cats</label>
+        <label><input type="checkbox" name="catoptions" value="white" class="inline" />White cats</label>
+        <label><input type="checkbox" name="catoptions" value="ginger" class="inline" />Ginger cats</label>
+        <label><input type="checkbox" name="catoptions" value="brown" class="inline" />Brown cats</label>
+        <label><input type="checkbox" name="catoptions" value="calico" class="inline" />Calico cats</label>
+        <label><input type="checkbox" name="catoptions" value="tortoise" class="inline" />Tortoiseshell cats</label>
+      </fieldset>
+      <fieldset>
+        <p>Any comments or suggestions?</p>
+        <textarea id="comments" type="textarea" rows="3" cols="30" placeholder="cats are cute..."></textarea>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
