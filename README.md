@@ -5,4 +5,3 @@ Survey Form
 
 FreeCodeCamp Responsive Web Design Certification Project 1
 
-https://github.com/alexamcx/survey-form-freecodecamp.git
